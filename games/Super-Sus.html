@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimStore | Top Up Super Sus</title>
+    <link rel="icon" href="/images/Logo KimStore.jpg.png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../src/styles/game.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header container">
+        <span>
+            <a href="/" class="logo"><span class="logo logo-z">Kim</span>Store</a>
+        </span>
+        <nav class="navbar">
+            <div class="navbar-wrap">
+                <ul class="hidden navbar-ul">
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <span class="slogan">
+                <h4>Top Up Game & Voucher Murah</h4>
+            </span>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="grid-cols-2 section-form_topup">
+            <div class="game-description">
+                <img src="../images/Cover-Supersus.png" alt="Super Sus">
+                <p>1. Masukkan ID</p>
+                <p>2. Pilih Nominal</p>
+                <p>3. Pilih Metode Pembayaran</p>
+                <p>4. Klik Pesan Sekarang</p>
+                </p>
+            </div>
+            <div>
+                <form action="">
+                    <fieldset class="form-input">
+                        <h3><span>1.</span> Masukan User ID</h3>
+                        <input class="form-input_ff" name="user_name" id="user_id" required placeholder="Masukan User ID">
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h3><span>2.</span> Pilih Nominal Golden Star</h3>
+                        <div class="grid grid-cols-3 ">
+                            <label class="nominal" data-price="11.200">
+                                <input type="radio" name="item_qty" required value="100 Golden Star Rp 11.200">
+                                <span>
+                                    100 Golden Star
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="27.500">
+                                <input type="radio" name="item_qty" required value="310 Golden Star Rp 27.500">
+                                <span>
+                                    310 Golden Star
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="94.200">
+                                <input type="radio" name="item_qty" required value="1.060 Golden Star Rp 94.200">
+                                <span>
+                                    1.060 Golden Star
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="190.000">
+                                <input type="radio" name="item_qty" required value="2.180 Golden Star Rp 190.000">
+                                <span>
+                                    2.180 Golden Star
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="482.200">
+                                <input type="radio" name="item_qty" required value="5.600 Golden Star Rp 482.200">
+                                <span>
+                                    5.600 Golden Star
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h3><span></span> Membership </h3>
+                        <div class="grid grid-cols-3 ">
+                            <label class="nominal" data-price="14.500">
+                                <input type="radio" name="item_qty" required value="Weekly Card Rp 14.500">
+                                <span>
+                                    Weekly Card
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="72.100">
+                                <input type="radio" name="item_qty" required value="Super Pass Rp 72.100">
+                                <span>
+                                    Super Pass
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="133.300">
+                                <input type="radio" name="item_qty" required value="Super Pass Bundle Rp 133.300">
+                                <span>
+                                    Super Pass Bundle
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="137.600">
+                                <input type="radio" name="item_qty" required value="Monthly Card Rp 137.600">
+                                <span>
+                                    Monthly Card
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="153.600">
+                                <input type="radio" name="item_qty" required value="Super VIP Card Rp 153.600">
+                                <span>
+                                    Super VIP Card
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h3><span>3.</span> Pilih Metode Pembayaran</h3>
+                        <div class="payment">
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="Gopay">
+                                <img src="../images/gopay.jpg" alt="">
+                                <span><small>Bayar dengan <b>Gopay</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="Dana">
+                                <img src="../images/dana.jpg" alt="">
+                                <span><small>Bayar dengan <b>Dana</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="ShopeePay">
+                                <img src="../images/shoppe.jpg" alt="">
+                                <span><small>Bayar dengan <b>ShopeePay</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="ShopeePay">
+                                <img src="../images/ovo.png" alt="">
+                                <span><small>Bayar dengan <b>Ovo</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </fieldset>
+                    <button class="btn-order">Pesan Sekarang</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer">
+            <div class="description">
+                <span>
+                    <a href="/" class="logo"><span class="logo logo-z">Kim</span>Store</a>
+                </span>
+                <br/>
+                Situs layanan topup game dengan pengalaman pembelian voucher game tanpa repot. Kami menyediakan banyak pilihan game kesayangan anda serta beberapa layanan kebutuhan harianmu.
+            </div>
+            <div class="menu">
+                <h3>Menu</h3>
+                <ul class="navbar-ul">
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="payment-footer">
+                <h3>Metode Pembayaran</h3>
+                <div class="payment-grid">
+                    <div>
+                        <img src="../images/shoppe.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../images/dana.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../images/gopay.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../images/ovo.png" alt="">
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy;2022 Digitalkios. All Rights Reserved
+        </div>
+    </footer>
+    <script src="../src/js/hamburger.js"></script>
+    <script src="../src/js/order.js"></script>
+    <script src="../src/js/keys.js"></script>
+</body>
+</html>

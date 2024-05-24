@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimStore | Top Up Brawl Stars</title>
+    <link rel="icon" href="/images/Logo KimStore.jpg.png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../src/styles/game.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header container">
+        <span>
+            <a href="/" class="logo"><span class="logo logo-z">Kim</span>Store</a>
+        </span>
+        <nav class="navbar">
+            <div class="navbar-wrap">
+                <ul class="hidden navbar-ul">
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <span class="slogan">
+                <h4>Top Up Game & Voucher Murah</h4>
+            </span>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="grid-cols-2 section-form_topup">
+            <div class="game-description">
+                <img src="../images/cover-BS.jpg.png" alt="Clash Of Clans">
+                <p>Top Up Gems Brawl Stars Murah. Cukup Masukan User ID Anda. Maka Gems Akan Langsung Terisi.
+                    Proses Maks 1x24 Jam, Jika tidak ada antrian proses memakan waktu 3-5 menit
+                </p>
+            </div>
+            <div>
+                <form action="">
+                    <fieldset class="form-input">
+                        <h3><span>1.</span> Masukan User ID</h3>
+                        <input class="form-input_ff" name="user_name" id="user_id" required placeholder="Masukan User ID">
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h3><span>2.</span> Pilih Nominal Gems</h3>
+                        <div class="grid grid-cols-3 ">
+                            <label class="nominal" data-price="27.400">
+                                <input type="radio" name="item_qty" required value="30 Gems Rp 27.400">
+                                <span>
+                                    30
+                                    <img src="../images/Gems-BS.jpg.png" alt="Gems BrawlStars">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="68.500">
+                                <input type="radio" name="item_qty" required value="88 Gems Rp 68.500">
+                                <span>
+                                    88
+                                    <img src="../images/Gems-BS.jpg.png" alt="Gems BrawlStars">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="129.600">
+                                <input type="radio" name="item_qty" required value="187 Gems Rp 129.600">
+                                <span>
+                                    187
+                                    <img src="../images/Gems-BS.jpg.png" alt="Gems BrawlStars">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="265.300">
+                                <input type="radio" name="item_qty" required value="396 Gems Rp 265.300">
+                                <span>
+                                    396
+                                    <img src="../images/Gems-BS.jpg.png" alt="Gems BrawlStars">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="629.200">
+                                <input type="radio" name="item_qty" required value="1045 Gems Rp 629.000">
+                                <span>
+                                    1045
+                                    <img src="../images/Gems-BS.jpg.png" alt="Gems BrawlStars">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="1.288.300">
+                                <input type="radio" name="item_qty" required value="2200 Gems Rp 1.288.300">
+                                <span>
+                                    2200
+                                    <img src="../images/Gems-BS.jpg.png" alt="Gems BrawlStars">
+                                </span>
+                            </label> 
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h3><span></span> Season Pass</h3>
+                        <div class="grid grid-cols-3 ">
+                            <label class="nominal" data-price="88.500">
+                                <input type="radio" name="item_qty" required value="Gold Pass Rp 88.500">
+                                <span>
+                                    Brawl Pass
+                                </span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h3><span>3.</span> Pilih Metode Pembayaran</h3>
+                        <div class="payment">
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="Gopay">
+                                <img src="../images/gopay.jpg" alt="">
+                                <span><small>Bayar dengan <b>Gopay</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="Dana">
+                                <img src="../images/dana.jpg" alt="">
+                                <span><small>Bayar dengan <b>Dana</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="ShopeePay">
+                                <img src="../images/shoppe.jpg" alt="">
+                                <span><small>Bayar dengan <b>ShopeePay</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment_method" required value="ShopeePay">
+                                <img src="../images/ovo.png" alt="">
+                                <span><small>Bayar dengan <b>Ovo</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </fieldset>
+                    <button class="btn-order">Pesan Sekarang</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer">
+            <div class="description">
+                <span>
+                    <a href="/" class="logo"><span class="logo logo-z">Kim</span>Store</a>
+                </span>
+                <br/>
+                Situs layanan topup game dengan pengalaman pembelian voucher game tanpa repot. Kami menyediakan banyak pilihan game kesayangan anda serta beberapa layanan kebutuhan harianmu.
+            </div>
+            <div class="menu">
+                <h3>Menu</h3>
+                <ul class="navbar-ul">
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="payment-footer">
+                <h3>Metode Pembayaran</h3>
+                <div class="payment-grid">
+                    <div>
+                        <img src="../images/shoppe.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../images/dana.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../images/gopay.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="../images/ovo.png" alt="">
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy;2022 Digitalkios. All Rights Reserved
+        </div>
+    </footer>
+    <script src="../src/js/hamburger.js"></script>
+    <script src="../src/js/order.js"></script>
+    <script src="../src/js/keys.js"></script>
+</body>
+</html>
